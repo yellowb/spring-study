@@ -20,4 +20,6 @@ public interface PersonService {
     void save(Person person);
 
     void delete(int id);
+
+    List<Person> findUserByUsernameStartsBy(String prefix);
 }

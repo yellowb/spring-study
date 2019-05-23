@@ -50,4 +50,10 @@ public class PersonServiceImpl implements PersonService {
     public void delete(int id) {
         personRepository.deleteById(id);
     }
+
+    @Override
+    public List<Person> findUserByUsernameStartsBy(String prefix) {
+        return personRepository.findUserByUsernameStartsBy(prefix);
+    }
+
 }

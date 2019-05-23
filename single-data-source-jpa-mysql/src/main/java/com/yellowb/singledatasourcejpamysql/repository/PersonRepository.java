@@ -14,4 +14,7 @@ public interface PersonRepository extends JpaRepository<Person, Integer> {
     List<Person> findByUserName(String userName);
 
     List<Person> findByIdAndUserName(int id, String userName);
+
+    //NamedQuery
+    List<Person> findUserByUsernameStartsBy(String prefix);
 }

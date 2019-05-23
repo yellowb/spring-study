@@ -85,4 +85,15 @@ public class PersonController {
         personService.delete(id);
     }
 
+    /**
+     * get user by username prefix
+     * @param prefix
+     * @return
+     */
+    @RequestMapping(value = "/search/username/starts/{prefix}", method = RequestMethod.GET)
+    @ResponseStatus(HttpStatus.OK)
+    public List<Person> getPersonsByUserNameStartsWith(@PathVariable("prefix") String prefix) {
+        return personService.findUserByUsernameStartsBy(prefix);
+    }
+
 }
