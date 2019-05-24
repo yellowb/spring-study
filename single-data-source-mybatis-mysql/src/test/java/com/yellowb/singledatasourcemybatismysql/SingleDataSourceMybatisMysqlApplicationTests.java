@@ -1,4 +1,4 @@
-package com.yb.demo_helloworld;
+package com.yellowb.singledatasourcemybatismysql;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class DemoHelloworldApplicationTests {
+public class SingleDataSourceMybatisMysqlApplicationTests {
 
 	@Test
 	public void contextLoads() {
