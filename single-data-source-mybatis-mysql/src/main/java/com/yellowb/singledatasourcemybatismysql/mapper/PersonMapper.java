@@ -18,5 +18,12 @@ public interface PersonMapper {
     })
     List<Person> findAll();
 
+    @Select("SELECT * FROM userinfo where id = #{id}")
+    @Results({
+        @Result(property = "id", column = "id"),
+        @Result(property = "userName", column = "username")
+    })
+    Person findOne(int id);
+
 
 }

@@ -20,4 +20,9 @@ public class PersonServiceImpl implements PersonService {
     public List<Person> findAll() {
         return personMapper.findAll();
     }
+
+    @Override
+    public Person findOne(int id) {
+        return personMapper.findOne(id);
+    }
 }

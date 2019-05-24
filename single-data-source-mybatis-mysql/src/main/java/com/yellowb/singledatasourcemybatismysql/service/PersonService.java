@@ -7,4 +7,6 @@ import java.util.*;
 public interface PersonService {
 
     List<Person> findAll();
+
+    Person findOne(int id);
 }

@@ -41,18 +41,18 @@ public class PersonController {
 //        PageRequest pageRequest = PageRequest.of(page, 4, sort);
 //        return personService.findAll(pageRequest);
 //    }
-//
-//    /**
-//     * get user by specified id
-//     * @param id
-//     * @return
-//     */
-//    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-//    @ResponseStatus(HttpStatus.OK)
-//    public List<Person> getPersonById(@PathVariable("id") int id) {
-//        return personService.findById(id);
-//    }
-//
+
+    /**
+     * get user by specified id
+     * @param id
+     * @return
+     */
+    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+    @ResponseStatus(HttpStatus.OK)
+    public Person getPersonById(@PathVariable("id") int id) {
+        return personService.findOne(id);
+    }
+
 //    /**
 //     * get user by username
 //     * @param userName
